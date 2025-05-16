@@ -4,10 +4,13 @@ import { Text } from 'react-native';
 export default function TabLayout() {
   return (
     <>
-     <Tabs>
-     <Tabs.Screen name="index" options={{headerShown: false, tabBarIcon: () => (<Text>❤</Text>)}}></Tabs.Screen>
-     <Tabs.Screen name="explore" options={{headerShown: false, tabBarIcon: () => (<Text>❤</Text>)}}></Tabs.Screen>
-     <Tabs.Screen name="list" options={{headerShown: false, tabBarIcon: () => (<Text>❤</Text>)}}></Tabs.Screen>
+     <Tabs screenOptions={{tabBarStyle: {backgroundColor: '#4D9856', height: 55, borderTopWidth: 0}, 
+      tabBarLabelStyle: {color: '#fff', fontWeight: 'bold', fontSize: 13},
+      tabBarActiveTintColor: "#fff",
+      tabBarInactiveTintColor: "#fff"
+      }}>
+     <Tabs.Screen name="index" options={{headerShown: false, tabBarLabel: "API"}}></Tabs.Screen>
+     <Tabs.Screen name="explore" options={{headerShown: false, tabBarLabel: "Lol"}}></Tabs.Screen>
     </Tabs>
     </>
    
